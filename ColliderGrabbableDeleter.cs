@@ -39,10 +39,10 @@ namespace ColliderGrabbableDeleter
                 if (Config.GetValue(Enabled))
                 {
                     ui.Style.MinHeight = 36;
-                    ui.Text("Delete Colliders And Grabbables");
+                    ui.Text("Delete MeshColliders And Grabbables");
                     ui.Style.MinHeight = 24;
 
-                    var btn = ui.Button("Delete Colliders And Grabbables of Child Slots");
+                    var btn = ui.Button("Delete MeshColliders And Grabbables of Child Slots");
 
                     btn.LocalPressed += (_btn, data) => {
                         __instance.RunSynchronously(delegate {
