@@ -1,4 +1,4 @@
-# ForceOSC
+# ColliderGrabbableDeleter
 
 A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) that Adds A button to ObjectRoot Components that, when pressed will remove all MeshColliders And Grabbables of Child Slots of that ObjectRoot<br>
 
