@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ColliderGrabbableDeleter
 {
-    public partial class ForceOSC : ResoniteMod
+    public partial class ColliderGrabbableDeleter : ResoniteMod
     {
         public override string Name => "ColliderGrabbableDeleter";
         public override String Author => "zahndy";
