@@ -48,7 +48,7 @@ namespace ColliderGrabbableDeleter
                         __instance.RunSynchronously(delegate {
                             foreach (Slot _child in __instance.Slot.Children)
                             {
-                                foreach (Component _Comp in _child.Components) 
+                                foreach (Component _Comp in _child.Components)
                                 {
                                     if (_Comp.Name == "MeshCollider" || _Comp.Name == "Grabbable")
                                     {

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.10.35013.160
+VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColliderGrabbableDeleter", "ColliderGrabbableDeleter.csproj", "{481D6D25-D2E2-4F63-A57A-3C24EB311882}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColliderGrabbableDeleter", "ColliderGrabbableDeleter.csproj", "{5BD05921-E3A4-4F81-A3F1-431CFBB05A58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{481D6D25-D2E2-4F63-A57A-3C24EB311882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{481D6D25-D2E2-4F63-A57A-3C24EB311882}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{481D6D25-D2E2-4F63-A57A-3C24EB311882}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{481D6D25-D2E2-4F63-A57A-3C24EB311882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD05921-E3A4-4F81-A3F1-431CFBB05A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD05921-E3A4-4F81-A3F1-431CFBB05A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD05921-E3A4-4F81-A3F1-431CFBB05A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD05921-E3A4-4F81-A3F1-431CFBB05A58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CAAC6C7C-1476-4722-938F-24C432039639}
+		SolutionGuid = {FC224856-EE4C-4717-9418-8DDBB9F5F888}
 	EndGlobalSection
 EndGlobal
