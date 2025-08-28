@@ -4,23 +4,26 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Resonite\rml_libs\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\Steam\SteamApps\common\Resonite\rml_libs\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="BepuPhysics">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Resonite\BepuPhysics.dll</HintPath>
+      <HintPath>..\..\..\..\..\Steam\SteamApps\common\Resonite\BepuPhysics.dll</HintPath>
     </Reference>
     <Reference Include="Elements.Core">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Resonite\Elements.Core.dll</HintPath>
+      <HintPath>..\..\..\..\..\Steam\SteamApps\common\Resonite\Elements.Core.dll</HintPath>
     </Reference>
     <Reference Include="FrooxEngine">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Resonite\FrooxEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\Steam\SteamApps\common\Resonite\FrooxEngine.dll</HintPath>
     </Reference>
     <Reference Include="ResoniteModLoader">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Resonite\Libraries\ResoniteModLoader.dll</HintPath>
+      <HintPath>..\..\..\..\..\Steam\SteamApps\common\Resonite\Libraries\ResoniteModLoader.dll</HintPath>
     </Reference>
   </ItemGroup>
 

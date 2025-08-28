@@ -15,7 +15,7 @@ namespace ColliderGrabbableDeleter
         public override string Name => "ColliderGrabbableDeleter";
         public override String Author => "zahndy";
         public override String Link => "https://github.com/zahndy/ColliderGrabbableDeleter";
-        public override String Version => "1.0.0";
+        public override String Version => "1.0.1";
 
         [AutoRegisterConfigKey]
         private static readonly ModConfigurationKey<bool> Enabled = new ModConfigurationKey<bool>("Enabled", "Enable this mod", () => true);
@@ -24,7 +24,7 @@ namespace ColliderGrabbableDeleter
 
         public override void OnEngineInit()
         {
-            Config = GetConfiguration();
+            Config = GetConfiguration()!;
             Config.Save(true);
 
             Harmony harmony = new Harmony("com.zahndy.ColliderGrabbableDeleter");
