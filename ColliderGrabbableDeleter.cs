@@ -1,5 +1,6 @@
 ﻿using FrooxEngine;
 using FrooxEngine.UIX;
+using FrooxEngine.Undo;
 using HarmonyLib;
 using ResoniteModLoader;
 using System;
@@ -46,20 +47,15 @@ namespace ColliderGrabbableDeleter
 
                     btn.LocalPressed += (_btn, data) => {
                         __instance.RunSynchronously(delegate {
-                            foreach (Slot _child in __instance.Slot.Children)
-                            {
-                                foreach (Component _Comp in _child.Components)
-                                {
-                                    if (_Comp.Name == "MeshCollider" || _Comp.Name == "Grabbable")
-                                    {
-                                        _child.RunSynchronously(delegate {
-                                            _Comp.Destroy();
-                                        });
-                                    }
-                                }
-                            }
-                        });
+                            __instance.World.BeginUndoBatch("Undo Mass Deletion"); // Figure out how to not make UndoableDestroy lag when deleting a lot of components
 
+                            List <MeshCollider> meshcolliders = __instance.Slot.GetComponentsInChildren<MeshCollider>();
+                            meshcolliders.ForEach(mc => mc.UndoableDestroy());
+                            List<Grabbable> grabbables = __instance.Slot.GetComponentsInChildren<Grabbable>();
+                            grabbables.ForEach(g => g.UndoableDestroy());
+
+                            __instance.World.EndUndoBatch();
+                        });
                     };
                 }
             }
